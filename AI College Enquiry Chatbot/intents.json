@@ -1,0 +1,37 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey"
+      ],
+      "responses": [
+        "Hello! Welcome to College Chatbot."
+      ]
+    },
+
+    {
+      "tag": "bye",
+      "patterns": [
+        "Bye",
+        "Goodbye"
+      ],
+      "responses": [
+        "Have a nice day!"
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank You",
+        "Thanks"
+      ],
+      "responses": [
+        "You're Welcome."
+      ]
+    }
+  ]
+}

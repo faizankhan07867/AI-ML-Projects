@@ -1,0 +1,6 @@
+movie_id,title,cast,crew
+1,Avatar,"[{'name':'Sam Worthington'},{'name':'Zoe Saldana'},{'name':'Sigourney Weaver'}]","[{'job':'Director','name':'James Cameron'}]"
+2,Titanic,"[{'name':'Leonardo DiCaprio'},{'name':'Kate Winslet'},{'name':'Billy Zane'}]","[{'job':'Director','name':'James Cameron'}]"
+3,The Dark Knight,"[{'name':'Christian Bale'},{'name':'Heath Ledger'},{'name':'Gary Oldman'}]","[{'job':'Director','name':'Christopher Nolan'}]"
+4,Inception,"[{'name':'Leonardo DiCaprio'},{'name':'Tom Hardy'},{'name':'Joseph Gordon-Levitt'}]","[{'job':'Director','name':'Christopher Nolan'}]"
+5,Interstellar,"[{'name':'Matthew McConaughey'},{'name':'Anne Hathaway'},{'name':'Jessica Chastain'}]","[{'job':'Director','name':'Christopher Nolan'}]"

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Crop Disease Detection</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌿 Crop Disease Detection</h1>
+
+<form action="/predict"
+method="POST"
+enctype="multipart/form-data">
+
+<input
+type="file"
+name="image"
+accept="image/*"
+required>
+
+<button>
+
+Predict Disease
+
+</button>
+
+</form>
+
+{% if disease %}
+
+<hr>
+
+<h2>Disease : {{ disease }}</h2>
+
+<h3>Confidence : {{ confidence }}%</h3>
+
+<img
+src="{{ url_for('uploaded_file', filename=image) }}"
+width="300">
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>

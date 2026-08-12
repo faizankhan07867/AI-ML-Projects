@@ -1,0 +1,11 @@
+text,label
+"I feel very happy today",positive
+"I am excited about my future",positive
+"I am feeling stressed",negative
+"I feel lonely",negative
+"I am anxious",negative
+"I feel calm",positive
+"I am depressed",negative
+"I feel motivated",positive
+"I am frustrated",negative
+"I feel relaxed",positive
