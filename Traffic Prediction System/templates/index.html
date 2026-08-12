@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Traffic Prediction</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚦 Traffic Prediction System</h1>
+
+<form action="/predict" method="POST">
+
+<input type="number"
+name="hour"
+placeholder="Hour (0-23)"
+required>
+
+<input type="number"
+name="day"
+placeholder="Day (1-7)"
+required>
+
+<input type="number"
+step="0.1"
+name="temperature"
+placeholder="Temperature"
+required>
+
+<select name="rain">
+
+<option value="0">No Rain</option>
+
+<option value="1">Rain</option>
+
+</select>
+
+<select name="holiday">
+
+<option value="0">Working Day</option>
+
+<option value="1">Holiday</option>
+
+</select>
+
+<button>
+
+Predict
+
+</button>
+
+</form>
+
+{% if prediction %}
+
+<h2>
+
+Predicted Traffic :
+
+{{ prediction }}
+
+Vehicles
+
+</h2>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
